@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genkai Collection</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Noto Serif SC"', '"Cormorant Garamond"', 'serif'],
+              display: ['"Cinzel"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            colors: {
+              primary: '#1A1A1A', // Sumi Ink
+              secondary: '#5A5A5A', // Stone Grey
+              paper: '#F5F2EB', // Washi Beige
+              'paper-dark': '#EBE8E1', // Darker Beige
+              dark: '#0a0a0a',
+              accent: '#8C3A3A', // Japanese Russet/Red (Muted)
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Fonts: Cinzel for Display, Cormorant Garamond for elegant text, Lato for UI, Noto Serif SC for Chinese -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400&family=Noto+Serif+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #F5F2EB;
+        color: #1A1A1A;
+        font-family: 'Noto Serif SC', serif;
+        overflow-x: hidden;
+      }
+      /* Hide scrollbar for clean look */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #EBE8E1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #C4C0B6;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #A39F96;
+      }
+      
+      /* Ensure Chinese text is not italicized even if parent requests it */
+      :lang(zh) {
+        font-style: normal;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "framer-motion": "https://esm.sh/framer-motion@^12.33.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
