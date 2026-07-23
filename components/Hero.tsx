@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="font-serif text-5xl md:text-8xl lg:text-9xl mb-8 tracking-wider text-primary"
         >
-          个人作品集<br className="md:hidden" /> 2019-2025
+          个人作品集<br className="md:hidden" /> 2019-2026
         </motion.h1>
         
         <div className="h-px w-16 bg-primary/20 mx-auto mb-10"></div>
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           className="font-serif text-base md:text-lg text-secondary leading-loose font-light tracking-wide"
         >
           一个什么都会一点的设计师。<br className="hidden md:block"/>
-          有时热爱，有时废柴，想做的事很多，一直在进步中。
+          热爱钻研新技术，想做的事很多，一直在进步中。
         </motion.p>
       </motion.div>
 
